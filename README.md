@@ -1,8 +1,6 @@
-# React + Vite
+# 리액트 과제 02 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-과제날짜 : 05.14 ~ 05.15 
+-기능구현 : li의 작은 이미지를 클릭하면 div 안의 큰 이미지의 제목과 옆의 텍스트 내용이 바뀌기
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+***
