@@ -1,0 +1,105 @@
+#container {
+    width: 1560px;
+    margin: 400px auto 0 auto;
+
+    .mainBar {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 20px;
+        height: 130px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            display: inline-block;
+            width: 400px;
+        }
+        .btn {
+            button {
+                width: 50px;
+                height: 50px;
+                border: none;
+                margin-left: 10px;
+                font-size: 30px;
+            }
+        }
+    }
+    .main {
+        display: flex;
+        justify-content: space-between;
+        .mainImg {
+            width: 600px;
+            height: 960px;
+            position: relative;
+            img {
+                width: 600px;
+            }
+            .num {
+                position: absolute;
+                bottom: 30px;
+                right: 30px;
+                font-size: 26px;
+                font-weight: 500;
+            }
+        }
+        .mainDesc {
+            width: 900px;
+            overflow: hidden;
+            .con1page {
+                dl {
+                    dt {
+                        width: 900px;
+                        font-size: 24px;
+                        font-weight: 500;
+                        position: relative;
+                        &.on {
+                            color: green;
+                        }
+                        svg {
+                            margin-left: 20px;
+                        }
+                        span {
+                            width: 900px;
+                            height: 1px;
+                            background: #000;
+                            display: inline;
+                            position: absolute;
+                            margin-left: 20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            &.on {
+                                background: green;
+                            }
+                        }
+                    }
+                    dd {
+                        font-size: 20px;
+                        font-weight: 300;
+                        margin-top: 40px;
+                        margin-bottom: 20px;
+                        transition: 0.4s;
+                        height: 0px;
+                        opacity: 0;
+                        &.on {
+                            height: 150px;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mainList {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 300px;
+            img {
+                width: 300px;
+            }
+        }
+    }
+}

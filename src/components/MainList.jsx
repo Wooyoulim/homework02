@@ -1,9 +1,9 @@
 import MainItem from './MainItem';
 
-const MainList = ({ data, clickChange }) => {
+const MainList = ({ main, clickChange }) => {
     return (
         <ul className="list">
-            {data.map((item) => (
+            {main.map((item) => (
                 <MainItem key={item.id} item={item} clickChange={clickChange} />
             ))}
         </ul>
