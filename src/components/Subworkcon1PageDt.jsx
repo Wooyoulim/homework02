@@ -6,7 +6,7 @@ const Subworkcon1PageDt = ({ id, title, desc, isShow, ul, ulChange }) => {
         <>
             <dt onClick={() => ulChange(id)} className={id === ul.id ? 'on' : ''}>
                 {title}
-                {isShow ? <FaChevronUp /> : <FaChevronDown />}
+                {id === ul.id ? <FaChevronUp /> : <FaChevronDown />}
                 <span className={id === ul.id ? 'on' : ''}></span>
             </dt>
             <dd className={id === ul.id ? 'on' : ''}>{desc}</dd>
