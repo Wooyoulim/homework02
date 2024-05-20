@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const Subworkcon1PageDt = ({ id, title, desc, isShow, onShow, ul }) => {
+const Subworkcon1PageDt = ({ id, title, desc, isShow, ul, ulChange }) => {
     return (
         <>
-            <dt onClick={() => onShow(id)} className={id === ul.id ? 'on' : ''}>
+            <dt onClick={() => ulChange(id)} className={id === ul.id ? 'on' : ''}>
                 {title}
                 {isShow ? <FaChevronUp /> : <FaChevronDown />}
                 <span className={id === ul.id ? 'on' : ''}></span>

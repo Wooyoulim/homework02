@@ -60,7 +60,7 @@ const Subworkcon1 = () => {
                         </p>
                     </div>
                     <div className="mainDesc">
-                        <Subworkcon1Page con1={con1} onShow={onShow} ul={ul} />
+                        <Subworkcon1Page con1={con1} onShow={onShow} ul={ul} ulChange={ulChange} />
                     </div>
                 </div>
                 <Subworkcon1List con1={con1} ulChange={ulChange} />
